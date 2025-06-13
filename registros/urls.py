@@ -11,4 +11,9 @@ urlpatterns = [
     path('despesas/editar/<int:pk>/', views.editar_despesa, name='editar_despesa'),
     path('despesas/excluir/<int:pk>/', views.excluir_despesa, name='excluir_despesa'),
     path('analise/', views.analise_faturamento, name='analise_faturamento'),
+
+    # Login/Logout/Registro
+    path('login/', views.login_view, name='login'),
+    path('logout/', views.logout_view, name='logout'),
+    path('registro/', views.registro_view, name='registro'),
 ]

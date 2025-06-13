@@ -12,6 +12,10 @@
   <div class="container">
     <a class="navbar-brand" href="#">Controle de Motorista</a>
     <div class="collapse navbar-collapse">
+
+              <!-- Botão de logout -->
+        <a href="{% url 'logout' %}">Sair</a>
+        
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="{% url 'registrar_ganho' %}">Ganhos</a></li>
         <li class="nav-item"><a class="nav-link" href="{% url 'registrar_despesa' %}">Despesas</a></li>
